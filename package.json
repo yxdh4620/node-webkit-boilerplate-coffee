@@ -1,0 +1,39 @@
+{
+  "name": "node-webkit-boilerplate-coffee",
+  "description": "node-webkit 项目模板",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yxdh4620/node-webkit-boilerplate-coffee",
+  "author": {
+    "name": "yxdh4620",
+    "email": "yxdn4620@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yxdh4620/node-webkit-boilerplate-coffee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yxdh4620/node-webkit-boilerplate-coffee/issues"
+  },
+  "scripts": {
+    "start": "nw app.nw",
+    "jade": "jade src/jade --out app.nw/ -w",
+    "coffee": "coffee -b -o app.nw/site/ -cw src/coffee/",
+    "watch": "coffee -b -o app.nw/site/ -cw src/coffee/",
+    "public": "cp -Rv ./public/js ./public/css ./public/images app.nw/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/yxdh4620/node-webkit-boilerplate-coffee/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.html",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "~0.2.0"
+  },
+  "keywords": []
+}
