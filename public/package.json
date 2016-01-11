@@ -1,0 +1,36 @@
+{
+  "name": "node-webkit-boilerplate-coffee",
+  "main": "./index.html",
+  "nodejs": true,
+  "node-main":"./site/main.js",
+  "description": "node-webkit 模板",
+  "version": "0.0.1",
+  "keywords": ["coffee", "node-webkit", "boilerplate"],
+  "homepage": "https://github.com/yxdh4620/node-webkit-boilerplate-coffee",
+  "author":{
+    "name": "yxdh4620",
+    "email": ""
+  },
+  "dependencies":{
+    "underscore": "1.5.2",
+    "shelljs": "latest"
+  },
+  "window": {
+    "title": "node-webkit 模板",
+    "icon": "link.png",
+    "debug": true,
+    "toolbar":  true,
+    "resizable":true,
+    "position": "center",
+    "frame":true,
+    "fullscreen": true,
+    "width":980,
+    "height":720,
+    "min_width":980,
+    "min_height":720
+  },
+  "webkit":{
+    "plugin": true
+  },
+  "chromium-args":"--enable-threaded-compositing"
+}

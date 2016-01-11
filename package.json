@@ -19,7 +19,7 @@
     "jade": "jade src/jade --out app.nw/ -w",
     "coffee": "coffee -b -o app.nw/site/ -cw src/coffee/",
     "watch": "coffee -b -o app.nw/site/ -cw src/coffee/",
-    "public": "cp -Rv ./public/js ./public/css ./public/images app.nw/"
+    "public": "cp -Rv ./public/package.json ./public/js ./public/css ./public/images app.nw/"
   },
   "licenses": [
     {
@@ -32,6 +32,7 @@
     "node": ">= 0.8.0"
   },
   "devDependencies": {
+    "jade": "1.11.0",
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "~0.2.0"
   },

@@ -1,0 +1,22 @@
+doctype html
+html
+  include ../includes/head
+  body
+    .wrapper
+      include ../includes/header
+      //block wrapper
+      .container(style="margin-top: 38px;")
+        .messages
+        block content
+        //.main-content
+          //block content
+
+    .footer.navbar-fixed-bottom
+      .row
+        .col-sm-3.col-md-2
+          // nothing here
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2
+          .fixed-bottom-bar
+            block bottom_bar
+
+    include ../includes/footer
